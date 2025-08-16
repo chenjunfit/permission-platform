@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package permission.v1;
+
+import "permission/v1/rbac.proto";
+
+option go_package = "github.com/permission-dev/api/proto/gen/permission/v1;permissionpb";
+
+message CheckPermissionRequest {
+  int64 uid = 1;
+  Permission permission = 2;
+
+  map<string, string> subject_attributes = 3;
+  map<string, string> resource_attributes = 4;
+  map<string, string> environment_attributes = 5;
+}
+message CheckPermissionResponse {
+  bool allowed = 1;
+}
+
+service PermissionService {
+  rpc CheckPermission(CheckPermissionRequest) returns (CheckPermissionResponse);
+}

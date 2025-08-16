@@ -1,0 +1,1172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GoORMHelperCache">
+    <option name="schemaMapping">
+      <map>
+        <entry key="App">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/ioc/app.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="BusinessConfig">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/domain/business_config.go" />
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/business_config.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Config">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/ioc/jwt.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="CreateRoleRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="CreateRoleRequestValidationError">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.validate.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="CreateRoleResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="CreateRoleResponseValidationError">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.validate.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="DeleteRoleRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="DeleteRoleRequestValidationError">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.validate.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="DeleteRoleResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="DeleteRoleResponseValidationError">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.validate.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="GetRoleRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="GetRoleRequestValidationError">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.validate.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="GetRoleResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="GetRoleResponseValidationError">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.validate.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="InitService">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/service/rbac/init.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="InteceptorBuilder">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/api/grpc/interceptor/whitelist/interceptor.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="InterceptorBuilder">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/api/grpc/interceptor/auth/interceptor.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ListRolesRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ListRolesRequestValidationError">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.validate.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ListRolesResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ListRolesResponseValidationError">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.validate.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Permission">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/domain/permission.go" />
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/permission.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="PermissionServer">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/api/grpc/rbac/permission_server.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Resource">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/domain/resource.go" />
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/resource.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Role">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.go" />
+              <option value="file://$PROJECT_DIR$/internal/domain/rbac_role.go" />
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/rbac_role.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RoleInclusion">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/domain/rbac_role_include.go" />
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/rbac_role_include.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RolePermission">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/domain/rbac_role_permission.go" />
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/rbac_role_permission.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RolePermissionDAO">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/rbac_role_permission.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RoleValidationError">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.validate.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Server">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/api/grpc/rbac/server.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Service">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/test/integration/ioc/rbac/wire.go" />
+              <option value="file://$PROJECT_DIR$/internal/test/integration/ioc/rbac/wire_gen.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Token">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/pkg/jwt/jwt.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UnimplementedRBACServiceServer">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac_grpc.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UpdateRoleRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UpdateRoleRequestValidationError">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.validate.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UpdateRoleResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UpdateRoleResponseValidationError">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.validate.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UserPermission">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/domain/rbac_user_permission.go" />
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/user_permission.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UserRole">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/domain/rbac_user_role.go" />
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/user_role.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="baseServer">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/api/grpc/rbac/base.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="baseserver">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/api/grpc/rbac/base.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="businessConfigDao">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/business_config.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="businessConfigRepository">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/business_config.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="permissionDao">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/permission.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="permissionRepository">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/permission.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="permissionService">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/service/rbac/permission.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="rBACServiceClient">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac_grpc.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="rbacService">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/service/rbac/service.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="resourceDao">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/resource.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="resourceRepository">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/resource.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="roleDao">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/rbac_role.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="roleIncludeRepository">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/rbac_role_include.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="roleInclusionDao">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/rbac_role_include.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="rolePermissionDAO">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/rbac_role_permission.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="rolePermissionRepository">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/rbac_role_permission.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="roleRepository">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/rbac_role.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="userPermissionDao">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/user_permission.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="userPermissionRepository">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/user_permission.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="userRoleDao">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/user_role.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="userRoleRepository">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/user_role.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="x">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.go" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="scannedPathMapping">
+      <map>
+        <entry key="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754542905229" />
+              <option name="schema">
+                <list>
+                  <option value="Role" />
+                  <option value="CreateRoleRequest" />
+                  <option value="CreateRoleResponse" />
+                  <option value="GetRoleRequest" />
+                  <option value="GetRoleResponse" />
+                  <option value="UpdateRoleRequest" />
+                  <option value="UpdateRoleResponse" />
+                  <option value="DeleteRoleRequest" />
+                  <option value="DeleteRoleResponse" />
+                  <option value="ListRolesRequest" />
+                  <option value="ListRolesResponse" />
+                  <option value="x" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.validate.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754542905230" />
+              <option name="schema">
+                <list>
+                  <option value="RoleValidationError" />
+                  <option value="CreateRoleRequestValidationError" />
+                  <option value="CreateRoleResponseValidationError" />
+                  <option value="GetRoleRequestValidationError" />
+                  <option value="GetRoleResponseValidationError" />
+                  <option value="UpdateRoleRequestValidationError" />
+                  <option value="UpdateRoleResponseValidationError" />
+                  <option value="DeleteRoleRequestValidationError" />
+                  <option value="DeleteRoleResponseValidationError" />
+                  <option value="ListRolesRequestValidationError" />
+                  <option value="ListRolesResponseValidationError" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac_grpc.pb.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754542905229" />
+              <option name="schema">
+                <list>
+                  <option value="rBACServiceClient" />
+                  <option value="UnimplementedRBACServiceServer" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/api/proto/permission/v1/permission.proto.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755061583678" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/cmd/platform/ioc/wire.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755180158716" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/cmd/platform/ioc/wire_gen.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754660752599" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/cmd/platform/main.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754542499121" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/api/grpc/interceptor/auth/interceptor.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754661692256" />
+              <option name="schema">
+                <list>
+                  <option value="InterceptorBuilder" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/api/grpc/interceptor/whitelist/interceptor.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755075908864" />
+              <option name="schema">
+                <list>
+                  <option value="InteceptorBuilder" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/api/grpc/interceptor/whitelist/whitelist.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755075149731" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/api/grpc/rbac/base.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754840161840" />
+              <option name="schema">
+                <list>
+                  <option value="baseServer" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/api/grpc/rbac/permission_server.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755063261114" />
+              <option name="schema">
+                <list>
+                  <option value="PermissionServer" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/api/grpc/rbac/server.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755184557520" />
+              <option name="schema">
+                <list>
+                  <option value="Server" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/domain/business_config.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755178558487" />
+              <option name="schema">
+                <list>
+                  <option value="BusinessConfig" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/domain/permission.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754911555585" />
+              <option name="schema">
+                <list>
+                  <option value="Permission" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/domain/rbac_role.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754492221489" />
+              <option name="schema">
+                <list>
+                  <option value="Role" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/domain/rbac_role_include.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755003228862" />
+              <option name="schema">
+                <list>
+                  <option value="RoleInclusion" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/domain/rbac_role_permission.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754990661895" />
+              <option name="schema">
+                <list>
+                  <option value="RolePermission" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/domain/rbac_user_permission.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755052161315" />
+              <option name="schema">
+                <list>
+                  <option value="UserPermission" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/domain/rbac_user_role.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754973665042" />
+              <option name="schema">
+                <list>
+                  <option value="UserRole" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/domain/resource.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754898242836" />
+              <option name="schema">
+                <list>
+                  <option value="Resource" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/errs/errors.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754989209874" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/ioc/app.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754542255804" />
+              <option name="schema">
+                <list>
+                  <option value="App" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/ioc/db.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754481277900" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/ioc/grpc.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755063732401" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/ioc/jwt.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754648083928" />
+              <option name="schema">
+                <list>
+                  <option value="Config" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/ioc/trace.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754542943721" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/pkg/jwt/generate_test.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754660328778" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/pkg/jwt/jwt.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754657418286" />
+              <option name="schema">
+                <list>
+                  <option value="Token" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/pkg/jwt/jwt_test.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754647302910" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/business_config.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755180137519" />
+              <option name="schema">
+                <list>
+                  <option value="businessConfigRepository" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/dao/business_config.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755251609169" />
+              <option name="schema">
+                <list>
+                  <option value="BusinessConfig" />
+                  <option value="businessConfigDao" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/dao/init.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755176945554" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/dao/permission.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754911477539" />
+              <option name="schema">
+                <list>
+                  <option value="Permission" />
+                  <option value="permissionDao" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/dao/rbac_role.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754541894517" />
+              <option name="schema">
+                <list>
+                  <option value="Role" />
+                  <option value="roleDao" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/dao/rbac_role_include.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755005480720" />
+              <option name="schema">
+                <list>
+                  <option value="RoleInclusion" />
+                  <option value="roleInclusionDao" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/dao/rbac_role_permission.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754990165852" />
+              <option name="schema">
+                <list>
+                  <option value="RolePermission" />
+                  <option value="rolePermissionDAO" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/dao/resource.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754900539681" />
+              <option name="schema">
+                <list>
+                  <option value="Resource" />
+                  <option value="resourceDao" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/dao/user_permission.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755054380808" />
+              <option name="schema">
+                <list>
+                  <option value="UserPermission" />
+                  <option value="userPermissionDao" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/dao/user_role.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754973038496" />
+              <option name="schema">
+                <list>
+                  <option value="UserRole" />
+                  <option value="userRoleDao" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/permission.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754917734978" />
+              <option name="schema">
+                <list>
+                  <option value="permissionRepository" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/rbac_role.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754541849386" />
+              <option name="schema">
+                <list>
+                  <option value="roleRepository" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/rbac_role_include.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755005576616" />
+              <option name="schema">
+                <list>
+                  <option value="roleIncludeRepository" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/rbac_role_permission.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755252376978" />
+              <option name="schema">
+                <list>
+                  <option value="rolePermissionRepository" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/resource.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754900564438" />
+              <option name="schema">
+                <list>
+                  <option value="resourceRepository" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/user_permission.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755057900257" />
+              <option name="schema">
+                <list>
+                  <option value="userPermissionRepository" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/user_role.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1754975961848" />
+              <option name="schema">
+                <list>
+                  <option value="userRoleRepository" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/service/rbac/init.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755249213636" />
+              <option name="schema">
+                <list>
+                  <option value="InitService" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/service/rbac/permission.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755061357197" />
+              <option name="schema">
+                <list>
+                  <option value="permissionService" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/service/rbac/service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755252109086" />
+              <option name="schema">
+                <list>
+                  <option value="rbacService" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/test/integration/ioc.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755160369897" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/test/integration/ioc/rbac/rbac.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755160414407" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/test/integration/ioc/rbac/wire.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755245419948" />
+              <option name="schema">
+                <list>
+                  <option value="Service" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/test/integration/ioc/rbac/wire_gen.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755240101751" />
+              <option name="schema">
+                <list>
+                  <option value="Service" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/test/integration/rbac.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755166916204" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/test/integration/rbac/rbac_init_test.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755253105324" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/test/integration/rbac/rbac_test_helper.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755252837373" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/test/ioc/base.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755244664089" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/test/ioc/db.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755244596966" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/test/ioc/jwt.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1755240595515" />
+            </ScannedPath>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="tableStructMapping">
+      <map>
+        <entry key="app" value="App" />
+        <entry key="base_server" value="baseServer" />
+        <entry key="business_config" value="BusinessConfig" />
+        <entry key="business_config_dao" value="businessConfigDao" />
+        <entry key="business_config_repository" value="businessConfigRepository" />
+        <entry key="config" value="Config" />
+        <entry key="create_role_request" value="CreateRoleRequest" />
+        <entry key="create_role_request_validation_error" value="CreateRoleRequestValidationError" />
+        <entry key="create_role_response" value="CreateRoleResponse" />
+        <entry key="create_role_response_validation_error" value="CreateRoleResponseValidationError" />
+        <entry key="delete_role_request" value="DeleteRoleRequest" />
+        <entry key="delete_role_request_validation_error" value="DeleteRoleRequestValidationError" />
+        <entry key="delete_role_response" value="DeleteRoleResponse" />
+        <entry key="delete_role_response_validation_error" value="DeleteRoleResponseValidationError" />
+        <entry key="get_role_request" value="GetRoleRequest" />
+        <entry key="get_role_request_validation_error" value="GetRoleRequestValidationError" />
+        <entry key="get_role_response" value="GetRoleResponse" />
+        <entry key="get_role_response_validation_error" value="GetRoleResponseValidationError" />
+        <entry key="init_service" value="InitService" />
+        <entry key="inteceptor_builder" value="InteceptorBuilder" />
+        <entry key="interceptor_builder" value="InterceptorBuilder" />
+        <entry key="list_roles_request" value="ListRolesRequest" />
+        <entry key="list_roles_request_validation_error" value="ListRolesRequestValidationError" />
+        <entry key="list_roles_response" value="ListRolesResponse" />
+        <entry key="list_roles_response_validation_error" value="ListRolesResponseValidationError" />
+        <entry key="permission" value="Permission" />
+        <entry key="permission_dao" value="permissionDao" />
+        <entry key="permission_repository" value="permissionRepository" />
+        <entry key="permission_server" value="PermissionServer" />
+        <entry key="permission_service" value="permissionService" />
+        <entry key="r_bac_service_client" value="rBACServiceClient" />
+        <entry key="rbac_service" value="rbacService" />
+        <entry key="resource" value="Resource" />
+        <entry key="resource_dao" value="resourceDao" />
+        <entry key="resource_repository" value="resourceRepository" />
+        <entry key="role" value="Role" />
+        <entry key="role_dao" value="roleDao" />
+        <entry key="role_include_repository" value="roleIncludeRepository" />
+        <entry key="role_inclusion" value="RoleInclusion" />
+        <entry key="role_inclusion_dao" value="roleInclusionDao" />
+        <entry key="role_permission" value="RolePermission" />
+        <entry key="role_permission_dao" value="rolePermissionDAO" />
+        <entry key="role_permission_repository" value="rolePermissionRepository" />
+        <entry key="role_repository" value="roleRepository" />
+        <entry key="role_validation_error" value="RoleValidationError" />
+        <entry key="server" value="Server" />
+        <entry key="service" value="Service" />
+        <entry key="token" value="Token" />
+        <entry key="unimplemented_rbac_service_server" value="UnimplementedRBACServiceServer" />
+        <entry key="update_role_request" value="UpdateRoleRequest" />
+        <entry key="update_role_request_validation_error" value="UpdateRoleRequestValidationError" />
+        <entry key="update_role_response" value="UpdateRoleResponse" />
+        <entry key="update_role_response_validation_error" value="UpdateRoleResponseValidationError" />
+        <entry key="user_permission" value="UserPermission" />
+        <entry key="user_permission_dao" value="userPermissionDao" />
+        <entry key="user_permission_repository" value="userPermissionRepository" />
+        <entry key="user_role" value="UserRole" />
+        <entry key="user_role_dao" value="userRoleDao" />
+        <entry key="user_role_repository" value="userRoleRepository" />
+        <entry key="x" value="x" />
+      </map>
+    </option>
+    <option name="lastTimeChecked" value="1754839778079" />
+  </component>
+</project>

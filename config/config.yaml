@@ -1,0 +1,17 @@
+mysql:
+  dsn: "root:root@tcp(localhost:13316)/permission?charset=utf8mb4&collation=utf8mb4_general_ci&parseTime=True&loc=Local&timeout=1s&readTimeout=3s&writeTimeout=3s&multiStatements=true"
+server:
+  governor:
+    host: "0.0.0.0"
+    port: 9003
+  grpc:
+    rbac:
+      host: "0.0.0.0"
+      port: 9002
+trace:
+  zipkin:
+    endpoint: "http://localhost:9411/api/v2/spans"
+    serviceName: "permission-platform"
+jwt:
+  key: "permission_platform_key"
+  issuer: "permission-platform"

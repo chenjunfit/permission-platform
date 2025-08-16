@@ -1,0 +1,395 @@
+syntax = "proto3";
+
+package permission.v1;
+
+option go_package = "github.com/permission-dev/api/proto/gen/permission/v1;permissionpb";
+
+message Role {
+  int64 id = 1;
+  int64 biz_id = 2;
+  string type = 3;
+  string name = 4;
+  string description = 5;
+  string metadata = 6;
+}
+
+message CreateRoleRequest {
+  Role role = 1;
+}
+message CreateRoleResponse {
+  Role role = 1;
+}
+message GetRoleRequest {
+  int64 biz_id = 1;
+  int64 id = 2;
+}
+message GetRoleResponse {
+  Role role = 1;
+}
+message UpdateRoleRequest {
+  Role role = 1;
+}
+message UpdateRoleResponse {
+  bool success = 1;
+}
+message DeleteRoleRequest {
+  int64 biz_id = 1;
+  int64 id = 2;
+}
+message DeleteRoleResponse {
+  bool success = 1;
+}
+message ListRolesRequest {
+  int64 biz_id = 1;
+  string type = 2;
+  int32 offset = 3;
+  int32 limit = 4;
+}
+message ListRolesResponse {
+  repeated Role roles = 1;
+}
+
+message Resource {
+  int64 id = 1;
+  int64 biz_id = 2;
+  string type = 3;
+  string key = 4;
+  string name = 5;
+  string description = 6;
+  // 和 Resource 有关的内容，是业务方在创建 Resource 的时候传入的内容
+  // 原封不动的返回
+  string metadata = 7;
+}
+
+message CreateResourceRequest {
+  Resource resource = 1;
+}
+message CreateResourceResponse {
+  Resource resource = 1;
+}
+message GetResourceRequest {
+  int64 biz_id = 1;
+  int64 id = 2;
+}
+message GetResourceResponse {
+  Resource resource = 1;
+}
+message UpdateResourceRequest {
+  Resource resource = 1;
+}
+message UpdateResourceResponse {
+  bool success = 1;
+}
+message DeleteResourceRequest {
+  int64 biz_id = 1;
+  int64 id = 2;
+}
+message DeleteResourceResponse {
+  bool success = 1;
+}
+message ListResourcesRequest {
+  int64 biz_id = 1;
+  int32 offset = 2;
+  int32 limit = 3;
+}
+message ListResourcesResponse {
+  repeated Resource resources = 1;
+}
+
+// 权限定义（资源 + 操作）
+message Permission {
+  int64 id = 1;
+  int64 biz_id = 2;
+  string name = 3;
+  string description = 4;
+  int64 resource_id = 5;
+  string resource_type = 6; // 资源类型
+  string resource_key = 7; // 资源标识符，类似于 /xxx/xxx/xxx 的格式
+  repeated string actions = 8; // 允许的操作列表
+  string metadata = 9;
+}
+message CreatePermissionRequest {
+  Permission permission = 1;
+}
+message CreatePermissionResponse {
+  Permission permission = 1;
+}
+message GetPermissionRequest {
+  int64 biz_id = 1;
+  int64 id = 2;
+}
+message GetPermissionResponse {
+  Permission permission = 1;
+}
+message UpdatePermissionRequest {
+  Permission permission = 1;
+}
+message UpdatePermissionResponse {
+  bool success = 1;
+}
+message DeletePermissionRequest {
+  int64 biz_id = 1;
+  int64 id = 2;
+}
+message DeletePermissionResponse {
+  bool success = 1;
+}
+message ListPermissionsRequest {
+  int64 biz_id = 1;
+  int32 offset = 2;
+  int32 limit = 3;
+}
+message ListPermissionsResponse {
+  repeated Permission permissions = 1;
+}
+
+message UserRole {
+  int64 id = 1;
+  int64 biz_id = 2;
+  int64 user_id = 3;
+  int64 role_id = 4;
+  string role_name = 5;
+  string role_type = 6;
+  int64 start_time = 7;
+  int64 end_time = 8;
+}
+message GrantUserRoleRequest {
+  UserRole user_role = 1;
+}
+message GrantUserRoleResponse {
+  UserRole user_role = 1;
+}
+message RevokeUserRoleRequest {
+  int64 biz_id = 1;
+  int64 id = 2;
+}
+message RevokeUserRoleResponse {
+  bool success = 1;
+}
+message ListUserRolesRequest {
+  int64 biz_id = 1;
+}
+message ListUserRolesResponse {
+  repeated UserRole user_roles = 1;
+}
+
+message RolePermission {
+  int64 id = 1;
+  int64 biz_id = 2;
+  int64 role_id = 3;
+  int64 permission_id = 4;
+  string role_name = 5;
+  string role_type = 6;
+  string resource_type = 7;
+  string resource_key = 8;
+  string permission_action = 9;
+}
+message GrantRolePermissionRequest {
+  RolePermission role_permission = 1;
+}
+message GrantRolePermissionResponse {
+  RolePermission role_permission = 1;
+}
+message RevokeRolePermissionRequest {
+  int64 biz_id = 1;
+  int64 id = 2;
+}
+
+message RevokeRolePermissionResponse {
+  bool success = 1;
+}
+
+message ListRolePermissionsRequest {
+  int64 biz_id = 1;
+}
+
+message ListRolePermissionsResponse {
+  repeated RolePermission role_permissions = 1;
+}
+message RoleInclusion {
+  int64 id = 1;
+  int64 biz_id = 2;
+  int64 including_role_id = 3;
+  string including_role_type = 4;
+  string including_role_name = 5;
+  int64 included_role_id = 6;
+  string included_role_type = 7;
+  string included_role_name = 8;
+}
+
+message CreateRoleInclusionRequest {
+  RoleInclusion role_inclusion = 1;
+}
+
+message CreateRoleInclusionResponse {
+  RoleInclusion role_inclusion = 1;
+}
+
+message GetRoleInclusionRequest {
+  int64 biz_id = 1;
+  int64 id = 2;
+}
+
+message GetRoleInclusionResponse {
+  RoleInclusion role_inclusion = 1;
+}
+
+message DeleteRoleInclusionRequest {
+  int64 biz_id = 1;
+  int64 id = 2;
+}
+
+message DeleteRoleInclusionResponse {
+  bool success = 1;
+}
+
+message ListRoleInclusionsRequest {
+  int64 biz_id = 1;
+  int32 offset = 2;
+  int32 limit = 3;
+}
+
+message ListRoleInclusionsResponse {
+  repeated RoleInclusion role_inclusions = 1;
+}
+message UserPermission {
+  int64 id = 1;
+  int64 biz_id = 2;
+  int64 user_id = 3;
+  int64 permission_id = 4;
+  string permission_name = 5;
+  string resource_type = 6;
+  string resource_key = 7;
+  string permission_action = 8;
+  string effect = 9;
+  int64 start_time = 10;
+  int64 end_time = 11;
+}
+message GrantUserPermissionRequest {
+  UserPermission user_permission = 1;
+}
+message GrantUserPermissionResponse {
+  UserPermission user_permission = 1;
+}
+message RevokeUserPermissionRequest {
+  int64 biz_id = 1;
+  int64 id = 2;
+}
+message RevokeUserPermissionResponse {
+  bool success = 1;
+}
+message ListUserPermissionsRequest {
+  int64 biz_id = 1;
+  int32 offset = 2;
+  int32 limit = 3;
+}
+
+message ListUserPermissionsResponse {
+  repeated UserPermission user_permissions = 1;
+}
+message GetAllPermissionsRequest {
+  int64 biz_id = 1;
+  int64 user_id = 2;
+}
+message GetAllPermissionsResponse {
+  repeated UserPermission user_permissions = 1;
+}
+
+message BusinessConfig {
+  int64 id = 1; // 业务ID
+  int64 owner_id = 2; // 业务方ID
+  string owner_type = 3; // 业务方类型
+  string name = 4; // 业务名称
+  int32 rate_limit = 5; // 每秒最大请求数
+  string token = 6; // 业务方Token，内部包含bizID也就是上方的id
+  int64 ctime = 7; // 创建时间戳
+  int64 utime = 8; // 更新时间戳
+}
+message CreateBusinessConfigRequest {
+  BusinessConfig config = 1;
+}
+
+message CreateBusinessConfigResponse {
+  BusinessConfig config = 1;
+}
+
+message GetBusinessConfigRequest {
+  int64 biz_id = 1;
+  int64 id = 2;
+}
+
+message GetBusinessConfigResponse {
+  BusinessConfig config = 1;
+}
+
+message UpdateBusinessConfigRequest {
+  BusinessConfig config = 1;
+}
+
+message UpdateBusinessConfigResponse {
+  bool success = 1;
+}
+
+message DeleteBusinessConfigRequest {
+  int64 biz_id = 1;
+  int64 id = 2;
+}
+
+message DeleteBusinessConfigResponse {
+  bool success = 1;
+}
+
+message ListBusinessConfigsRequest {
+  int32 offset = 1;
+  int32 limit = 2;
+}
+
+message ListBusinessConfigsResponse {
+  repeated BusinessConfig configs = 1;
+}
+service RBACService {
+  // 角色相关接口
+  rpc CreateRole(CreateRoleRequest) returns (CreateRoleResponse);
+  rpc GetRole(GetRoleRequest) returns (GetRoleResponse);
+  rpc UpdateRole(UpdateRoleRequest) returns (UpdateRoleResponse);
+  rpc DeleteRole(DeleteRoleRequest) returns (DeleteRoleResponse);
+  rpc ListRoles(ListRolesRequest) returns (ListRolesResponse);
+  //资源相关接口
+  rpc CreateResource(CreateResourceRequest) returns (CreateResourceResponse);
+  rpc GetResource(GetResourceRequest) returns (GetResourceResponse);
+  rpc UpdateResource(UpdateResourceRequest) returns (UpdateResourceResponse);
+  rpc DeleteResource(DeleteResourceRequest) returns (DeleteResourceResponse);
+  rpc ListResources(ListResourcesRequest) returns (ListResourcesResponse);
+  //权限相关接口
+  rpc CreatePermission(CreatePermissionRequest) returns (CreatePermissionResponse);
+  rpc GetPermission(GetPermissionRequest) returns (GetPermissionResponse);
+  rpc UpdatePermission(UpdatePermissionRequest) returns (UpdatePermissionResponse);
+  rpc DeletePermission(DeletePermissionRequest) returns (DeletePermissionResponse);
+  rpc ListPermissions(ListPermissionsRequest) returns (ListPermissionsResponse);
+  // 用户角色相关接口
+  rpc GrantUserRole(GrantUserRoleRequest) returns (GrantUserRoleResponse);
+  rpc RevokeUserRole(RevokeUserRoleRequest) returns (RevokeUserRoleResponse);
+  rpc ListUserRoles(ListUserRolesRequest) returns (ListUserRolesResponse);
+  //角色权限相关接口
+  rpc GrantRolePermission(GrantRolePermissionRequest) returns (GrantRolePermissionResponse);
+  rpc RevokeRolePermission(RevokeRolePermissionRequest) returns (RevokeRolePermissionResponse);
+  rpc ListRolePermissions(ListRolePermissionsRequest) returns (ListRolePermissionsResponse);
+  //角色包含相关接口
+  rpc CreateRoleInclusion(CreateRoleInclusionRequest) returns (CreateRoleInclusionResponse);
+  rpc GetRoleInclusion(GetRoleInclusionRequest) returns (GetRoleInclusionResponse);
+  rpc DeleteRoleInclusion(DeleteRoleInclusionRequest) returns (DeleteRoleInclusionResponse);
+  rpc ListRoleInclusions(ListRoleInclusionsRequest) returns (ListRoleInclusionsResponse);
+  //用户权限相关接口
+  rpc GrantUserPermission(GrantUserPermissionRequest) returns (GrantUserPermissionResponse);
+  rpc RevokeUserPermission(RevokeUserPermissionRequest) returns (RevokeUserPermissionResponse);
+  rpc ListUserPermissions(ListUserPermissionsRequest) returns (ListUserPermissionsResponse);
+  // 获取用户所有权限
+  rpc GetAllPermissions(GetAllPermissionsRequest) returns (GetAllPermissionsResponse);
+
+  // 业务配置相关接口
+  rpc CreateBusinessConfig(CreateBusinessConfigRequest) returns (CreateBusinessConfigResponse);
+  rpc GetBusinessConfig(GetBusinessConfigRequest) returns (GetBusinessConfigResponse);
+  rpc UpdateBusinessConfig(UpdateBusinessConfigRequest) returns (UpdateBusinessConfigResponse);
+  rpc DeleteBusinessConfig(DeleteBusinessConfigRequest) returns (DeleteBusinessConfigResponse);
+  rpc ListBusinessConfigs(ListBusinessConfigsRequest) returns (ListBusinessConfigsResponse);
+}
