@@ -40,7 +40,7 @@ type PermissionDAO interface {
 	FindByBizIDAndID(ctx context.Context, bizId, id int64) (Permission, error)
 	UpdateByBizIDAndID(ctx context.Context, permission Permission) error
 	DeleteByBizIDAndID(ctx context.Context, bizId, id int64) error
-	FindPermissions(ctx context.Context, bizId, resourceType, resourceKey string, action []string) ([]Permission, error)
+	FindPermissions(ctx context.Context, bizId int64, resourceType, resourceKey string, action []string) ([]Permission, error)
 }
 type permissionDao struct {
 	db *egorm.Component
@@ -95,7 +95,7 @@ func (p *permissionDao) DeleteByBizIDAndID(ctx context.Context, bizId, id int64)
 	return p.db.WithContext(ctx).Model(&Permission{}).Where("biz_id=? AND id=?", bizId, id).Delete(&Permission{}).Error
 }
 
-func (p *permissionDao) FindPermissions(ctx context.Context, bizId, resourceType, resourceKey string, action []string) ([]Permission, error) {
+func (p *permissionDao) FindPermissions(ctx context.Context, bizId int64, resourceType, resourceKey string, action []string) ([]Permission, error) {
 	permissions := make([]Permission, 0)
 	err := p.db.WithContext(ctx).
 		Model(&Permission{}).

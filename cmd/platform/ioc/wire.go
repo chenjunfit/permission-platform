@@ -8,6 +8,7 @@ import (
 	"github.com/permission-dev/internal/ioc"
 	"github.com/permission-dev/internal/repository"
 	"github.com/permission-dev/internal/repository/dao"
+	"github.com/permission-dev/internal/service/abac"
 	rbacSvc "github.com/permission-dev/internal/service/rbac"
 )
 
@@ -25,6 +26,12 @@ var (
 		dao.NewUserPermissionDAO,
 		dao.NewRoleInclusionDAO,
 		dao.NewBusinessConfigDAO,
+
+		dao.NewAttributeDefinitionDAO,
+		dao.NewResourceAttributeValueDAO,
+		dao.NewEnvironmentAttributeValueDAO,
+		dao.NewSubjectAttributeValueDAO,
+
 		repository.NewRoleRepository,
 		repository.NewResourceRepository,
 		repository.NewPermissionRepository,
@@ -34,8 +41,16 @@ var (
 		repository.NewRoleIncludeRepository,
 		repository.NewBusinessConfigRepository,
 
+		repository.NewAttributeDefinitionRepository,
+		repository.NewAttributeValueRepository,
+		repository.NewAttributePolicyRepository,
+
 		rbacSvc.NewService,
 		rbacSvc.NewPermissionService,
+
+		abac.NewAttributeDefinitionSvc,
+		abac.NewAttributeValueSvc,
+		abac.NewPolicySvc,
 	)
 )
 

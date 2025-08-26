@@ -11,4 +11,6 @@ var (
 	ErrDecodeJWTTokenFailed    = errors.New("JWT令牌解析失败")
 	ErrInvalidJWTToken         = errors.New("无效的令牌")
 	ErrBizIDNotFound           = errors.New("BizID不存在")
+	ErrUnkonwOperator          = errors.New("未知操作")
+	ErrUnkonwDataType          = errors.New("未知类型")
 )

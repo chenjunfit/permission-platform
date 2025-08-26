@@ -9,7 +9,7 @@ import (
 
 type PermissionRepository interface {
 	Create(ctx context.Context, permission domain.Permission) (domain.Permission, error)
-	FindPermissions(ctx context.Context, bizId, resourceType, resourceKey string, action []string) ([]domain.Permission, error)
+	FindPermissions(ctx context.Context, bizId int64, resourceType, resourceKey string, action []string) ([]domain.Permission, error)
 	FindByBizID(ctx context.Context, bizId int64, offset, limit int) ([]domain.Permission, error)
 	FindByBizIDANdID(ctx context.Context, bizId, id int64) (domain.Permission, error)
 	UpdateByBizIDAndID(ctx context.Context, permission domain.Permission) (domain.Permission, error)
@@ -40,7 +40,7 @@ func (p *permissionRepository) Create(ctx context.Context, permission domain.Per
 	return p.toDomain(created), nil
 }
 
-func (p *permissionRepository) FindPermissions(ctx context.Context, bizId, resourceType, resourceKey string, action []string) ([]domain.Permission, error) {
+func (p *permissionRepository) FindPermissions(ctx context.Context, bizId int64, resourceType, resourceKey string, action []string) ([]domain.Permission, error) {
 	permissions, err := p.permissionDao.FindPermissions(ctx, bizId, resourceType, resourceKey, action)
 	if err != nil {
 		return nil, err

@@ -16,6 +16,14 @@ func InitTable(db *egorm.Component) error {
 		&RoleInclusion{},
 		&UserPermission{},
 		&BusinessConfig{},
+
+		&AttributeDefinition{},
+		&EnvironmentAttributeValue{},
+		&ResourceAttributeValue{},
+		&SubjectAttributeValue{},
+		&Policy{},
+		&PolicyRule{},
+		&PermissionPolicy{},
 	)
 }
 
