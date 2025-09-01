@@ -15,3 +15,27 @@ trace:
 jwt:
   key: "permission_platform_key"
   issuer: "permission-platform"
+
+kafka:
+  addr: "localhost:9092"
+
+userRoleBinlogEvent:
+  topic: "user_roles_binlog"
+  consumer:
+    groupId: "user_roles_binlog_consumer_group"
+
+userPermissionEvent:
+  topic: "user-permission-events"
+
+cache:
+  local:
+    capacity: 1000000
+  multilevel:
+    etcdKey: "hot_users"
+    localCacheRefreshPeriod: 5000000000
+    redisPingTimeout: 3000000000
+    redisHealthCheckPeriod: 1000000000
+    errorEvents:
+      bitRingSize: 128
+      rateThreshold: 0.8
+      consecutiveCount: 3

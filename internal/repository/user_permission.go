@@ -18,6 +18,8 @@ type UserPermissionRepository interface {
 	DeleteByBizIdAndID(ctx context.Context, bizId, id int64) error
 	//返回用户的个人权限，个人角色以及包含角色的权限
 	GetALLUserPermission(ctx context.Context, bizId, userId int64) ([]domain.UserPermission, error)
+
+	FindByBizIDAndID(ctx context.Context, bizId, id int64) (domain.UserPermission, error)
 }
 
 type userPermissionRepository struct {
@@ -34,7 +36,13 @@ func (u *userPermissionRepository) Create(ctx context.Context, permission domain
 	}
 	return u.toDomain(created), nil
 }
-
+func (u *userPermissionRepository) FindByBizIDAndID(ctx context.Context, bizID, id int64) (domain.UserPermission, error) {
+	up, err := u.userPermissionDao.FindByBizIdAndID(ctx, bizID, id)
+	if err != nil {
+		return domain.UserPermission{}, err
+	}
+	return u.toDomain(up), nil
+}
 func (u *userPermissionRepository) FindByBizID(ctx context.Context, bizId int64, offset, limit int) ([]domain.UserPermission, error) {
 	ups, err := u.userPermissionDao.FindByBizID(ctx, bizId, offset, limit)
 	if err != nil {

@@ -3,6 +3,7 @@ package dao
 import (
 	"github.com/ego-component/egorm"
 	"github.com/go-sql-driver/mysql"
+	"github.com/permission-dev/internal/repository/dao/audit"
 	"github.com/pkg/errors"
 )
 
@@ -24,6 +25,9 @@ func InitTable(db *egorm.Component) error {
 		&Policy{},
 		&PolicyRule{},
 		&PermissionPolicy{},
+
+		&audit.OperationLog{},
+		&audit.UserRoleLog{},
 	)
 }
 

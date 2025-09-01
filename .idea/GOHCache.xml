@@ -81,6 +81,28 @@
             </set>
           </value>
         </entry>
+        <entry key="AuthRequire">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/pkg/gorm/type.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="BitRing">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/pkg/bitring/bitring.go" />
+              <option value="file://$PROJECT_DIR$/../permission-platform/pkg/bitring/bitring.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Bitring">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/pkg/bitring/bitring.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="BizAttrDefinition">
           <value>
             <set>
@@ -118,6 +140,13 @@
             </set>
           </value>
         </entry>
+        <entry key="CheckPermissionMiddlewareBuilder">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/pkg/ginx/check_permission_builder.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="CheckPermissionRequest">
           <value>
             <set>
@@ -146,10 +175,19 @@
             </set>
           </value>
         </entry>
+        <entry key="Cluster">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/pkg/cache/multi_cluster_cache.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="Config">
           <value>
             <set>
+              <option value="file://$PROJECT_DIR$/internal/ioc/cache.go" />
               <option value="file://$PROJECT_DIR$/internal/ioc/jwt.go" />
+              <option value="file://$PROJECT_DIR$/internal/ioc/kafaka.go" />
             </set>
           </value>
         </entry>
@@ -433,10 +471,24 @@
             </set>
           </value>
         </entry>
+        <entry key="Entry">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/pkg/cache/multi_cache_v2.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="EnvironmentAttributeValue">
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/internal/repository/dao/abac_env_attribute_value.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ErrorEventConfig">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/ioc/cache.go" />
             </set>
           </value>
         </entry>
@@ -451,6 +503,13 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/internal/service/abac/evaluator/float.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="GeneralProducer">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/pkg/mqx/producer.go" />
             </set>
           </value>
         </entry>
@@ -622,6 +681,13 @@
             </set>
           </value>
         </entry>
+        <entry key="GormAccessPlugin">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/pkg/gorm/gorm.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="GrantRolePermissionRequest">
           <value>
             <set>
@@ -706,6 +772,13 @@
             </set>
           </value>
         </entry>
+        <entry key="HotUserLoader">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/ioc/cache.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="InitService">
           <value>
             <set>
@@ -723,6 +796,7 @@
         <entry key="InterceptorBuilder">
           <value>
             <set>
+              <option value="file://$PROJECT_DIR$/internal/api/grpc/interceptor/audit/operation_log.go" />
               <option value="file://$PROJECT_DIR$/internal/api/grpc/interceptor/auth/interceptor.go" />
             </set>
           </value>
@@ -951,6 +1025,34 @@
             </set>
           </value>
         </entry>
+        <entry key="Message">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/pkg/canalx/canalx.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="MultiCacheV1">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/pkg/cache/multi_cache_v1.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="MultiCacheV2">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/pkg/cache/multi_cache_v2.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="MultiClusterCache">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/pkg/cache/multi_cluster_cache.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="NumberConverter">
           <value>
             <set>
@@ -962,6 +1064,13 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/internal/service/abac/evaluator/number.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="OperationLog">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/audit/operation_log.go" />
             </set>
           </value>
         </entry>
@@ -985,6 +1094,13 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/internal/api/grpc/rbac/permission_server.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="PermissionV1">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/event/permission/producer.go" />
             </set>
           </value>
         </entry>
@@ -1016,6 +1132,8 @@
             <set>
               <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.go" />
               <option value="file://$PROJECT_DIR$/internal/domain/resource.go" />
+              <option value="file://$PROJECT_DIR$/internal/event/permission/producer.go" />
+              <option value="file://$PROJECT_DIR$/internal/pkg/gorm/gorm.go" />
               <option value="file://$PROJECT_DIR$/internal/repository/dao/resource.go" />
             </set>
           </value>
@@ -1349,12 +1467,42 @@
             </set>
           </value>
         </entry>
+        <entry key="User">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/domain/user.go" />
+              <option value="file://$PROJECT_DIR$/internal/pkg/gorm/gorm_test.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="UserPermission">
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.go" />
               <option value="file://$PROJECT_DIR$/internal/domain/rbac_user_permission.go" />
+              <option value="file://$PROJECT_DIR$/internal/event/permission/producer.go" />
               <option value="file://$PROJECT_DIR$/internal/repository/dao/user_permission.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UserPermissionCachedRepository">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/rabac_user_permission_cache.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UserPermissionEvent">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/event/permission/producer.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UserPermissionRepository">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/user_permission.go" />
             </set>
           </value>
         </entry>
@@ -1371,6 +1519,21 @@
               <option value="file://$PROJECT_DIR$/api/proto/gen/permission/v1/rbac.pb.go" />
               <option value="file://$PROJECT_DIR$/internal/domain/rbac_user_role.go" />
               <option value="file://$PROJECT_DIR$/internal/repository/dao/user_role.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UserRoleBinLogConsumer">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/event/audit/consumer.go" />
+              <option value="file://$PROJECT_DIR$/internal/event/consumer.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UserRoleLog">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/audit/user_role_operation_log.go" />
             </set>
           </value>
         </entry>
@@ -1456,6 +1619,20 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/internal/service/abac/abac_policy_executor.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="mockPermissionServiceClient">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/pkg/gorm/gorm_test.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="operationLogDao">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/audit/operation_log.go" />
             </set>
           </value>
         </entry>
@@ -1593,6 +1770,13 @@
             </set>
           </value>
         </entry>
+        <entry key="step">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/pkg/bitring/bitring_test.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="subjectAttributeValueDao">
           <value>
             <set>
@@ -1604,6 +1788,13 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/internal/service/abac/evaluator/time.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="userPermissionCache">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/cache/rbac_user_permission_cache.go" />
             </set>
           </value>
         </entry>
@@ -1625,6 +1816,13 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/internal/repository/dao/user_role.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="userRoleLogDAO">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/dao/audit/user_role_operation_log.go" />
             </set>
           </value>
         </entry>
@@ -1878,7 +2076,7 @@
         <entry key="file://$PROJECT_DIR$/cmd/platform/ioc/wire.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1755779021820" />
+              <option name="lastModified" value="1756555297993" />
             </ScannedPath>
           </value>
         </entry>
@@ -1892,7 +2090,7 @@
         <entry key="file://$PROJECT_DIR$/cmd/platform/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1754542499121" />
+              <option name="lastModified" value="1756567006596" />
             </ScannedPath>
           </value>
         </entry>
@@ -1939,6 +2137,18 @@
               <option name="schema">
                 <list>
                   <option value="baseServer" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/api/grpc/interceptor/audit/operation_log.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756529450923" />
+              <option name="schema">
+                <list>
+                  <option value="InterceptorBuilder" />
                 </list>
               </option>
             </ScannedPath>
@@ -2158,6 +2368,18 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/internal/domain/user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756726805539" />
+              <option name="schema">
+                <list>
+                  <option value="User" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/internal/errs/errors.go">
           <value>
             <ScannedPath>
@@ -2165,13 +2387,66 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/internal/event/audit/consumer.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756730057027" />
+              <option name="schema">
+                <list>
+                  <option value="UserRoleBinLogConsumer" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/event/consumer.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756610428307" />
+              <option name="schema">
+                <list>
+                  <option value="UserRoleBinLogConsumer" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/event/permission/producer.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756732551853" />
+              <option name="schema">
+                <list>
+                  <option value="UserPermissionEvent" />
+                  <option value="UserPermission" />
+                  <option value="PermissionV1" />
+                  <option value="Resource" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/internal/ioc/app.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1754542255804" />
+              <option name="lastModified" value="1756566996147" />
               <option name="schema">
                 <list>
                   <option value="App" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/ioc/cache.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756728387345" />
+              <option name="schema">
+                <list>
+                  <option value="ErrorEventConfig" />
+                  <option value="Config" />
+                  <option value="HotUserLoader" />
                 </list>
               </option>
             </ScannedPath>
@@ -2203,6 +2478,18 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/internal/ioc/kafaka.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756559427512" />
+              <option name="schema">
+                <list>
+                  <option value="Config" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/internal/ioc/trace.go">
           <value>
             <ScannedPath>
@@ -2220,7 +2507,33 @@
         <entry key="file://$PROJECT_DIR$/internal/pkg/gorm/gorm.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1756211345224" />
+              <option name="lastModified" value="1756217238844" />
+              <option name="schema">
+                <list>
+                  <option value="GormAccessPlugin" />
+                  <option value="Resource" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/pkg/gorm/gorm_test.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756217719766" />
+              <option name="schema">
+                <list>
+                  <option value="User" />
+                  <option value="mockPermissionServiceClient" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/pkg/gorm/type.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756211978414" />
             </ScannedPath>
           </value>
         </entry>
@@ -2305,6 +2618,25 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/cache/local/abac_attribute_definition.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756710174799" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/cache/rbac_user_permission_cache.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756729789417" />
+              <option name="schema">
+                <list>
+                  <option value="userPermissionCache" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/internal/repository/dao/abac_attribute_definition.go">
           <value>
             <ScannedPath>
@@ -2372,6 +2704,39 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/dao/audit/audit.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756527609028" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/dao/audit/operation_log.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756528182765" />
+              <option name="schema">
+                <list>
+                  <option value="OperationLog" />
+                  <option value="operationLogDao" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/dao/audit/user_role_operation_log.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756560352794" />
+              <option name="schema">
+                <list>
+                  <option value="UserRoleLog" />
+                  <option value="userRoleLogDAO" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/internal/repository/dao/business_config.go">
           <value>
             <ScannedPath>
@@ -2388,7 +2753,7 @@
         <entry key="file://$PROJECT_DIR$/internal/repository/dao/init.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1755658931622" />
+              <option name="lastModified" value="1756560737334" />
             </ScannedPath>
           </value>
         </entry>
@@ -2495,6 +2860,18 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/rabac_user_permission_cache.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756735830177" />
+              <option name="schema">
+                <list>
+                  <option value="UserPermissionCachedRepository" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/internal/repository/rbac_role.go">
           <value>
             <ScannedPath>
@@ -2531,6 +2908,13 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/rbac_user_role_cache.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756735990203" />
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/internal/repository/resource.go">
           <value>
             <ScannedPath>
@@ -2546,7 +2930,7 @@
         <entry key="file://$PROJECT_DIR$/internal/repository/user_permission.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1755057900257" />
+              <option name="lastModified" value="1756734859683" />
               <option name="schema">
                 <list>
                   <option value="userPermissionRepository" />
@@ -2872,6 +3256,137 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/bitring/bitring.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756373465814" />
+              <option name="schema">
+                <list>
+                  <option value="BitRing" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/bitring/bitring_test.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756369389472" />
+              <option name="schema">
+                <list>
+                  <option value="step" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/cache/multi_cache_v1.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756373604827" />
+              <option name="schema">
+                <list>
+                  <option value="MultiCacheV1" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/cache/multi_cache_v2.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756387532845" />
+              <option name="schema">
+                <list>
+                  <option value="Entry" />
+                  <option value="MultiCacheV2" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/cache/multi_cluster_cache.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756389907828" />
+              <option name="schema">
+                <list>
+                  <option value="Cluster" />
+                  <option value="MultiClusterCache" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/cache/types.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756726483937" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/canalx.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756609833578" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/canalx/canalx.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756610046942" />
+              <option name="schema">
+                <list>
+                  <option value="Message" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/ginx/check_permission_builder.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756216100292" />
+              <option name="schema">
+                <list>
+                  <option value="CheckPermissionMiddlewareBuilder" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/mqx/consumer.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756561561917" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/pkg/mqx/producer.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756733421267" />
+              <option name="schema">
+                <list>
+                  <option value="GeneralProducer" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../permission-platform/pkg/bitring/bitring.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756304374648" />
+              <option name="schema">
+                <list>
+                  <option value="BitRing" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="tableStructMapping">
@@ -2893,7 +3408,10 @@
         <entry key="attribute_value_repository" value="attributeValueRepository" />
         <entry key="attribute_value_svc" value="attributeValueSvc" />
         <entry key="attributes" value="Attributes" />
+        <entry key="auth_require" value="AuthRequire" />
         <entry key="base_server" value="baseServer" />
+        <entry key="bit_ring" value="BitRing" />
+        <entry key="bitring" value="Bitring" />
         <entry key="biz_attr_definition" value="BizAttrDefinition" />
         <entry key="bool_converter" value="BoolConverter" />
         <entry key="bool_evaluator" value="BoolEvaluator" />
@@ -2901,10 +3419,12 @@
         <entry key="business_config_dao" value="businessConfigDao" />
         <entry key="business_config_repository" value="businessConfigRepository" />
         <entry key="business_config_validation_error" value="BusinessConfigValidationError" />
+        <entry key="check_permission_middleware_builder" value="CheckPermissionMiddlewareBuilder" />
         <entry key="check_permission_request" value="CheckPermissionRequest" />
         <entry key="check_permission_request_validation_error" value="CheckPermissionRequestValidationError" />
         <entry key="check_permission_response" value="CheckPermissionResponse" />
         <entry key="check_permission_response_validation_error" value="CheckPermissionResponseValidationError" />
+        <entry key="cluster" value="Cluster" />
         <entry key="config" value="Config" />
         <entry key="create_business_config_request" value="CreateBusinessConfigRequest" />
         <entry key="create_business_config_request_validation_error" value="CreateBusinessConfigRequestValidationError" />
@@ -2946,10 +3466,13 @@
         <entry key="delete_role_request_validation_error" value="DeleteRoleRequestValidationError" />
         <entry key="delete_role_response" value="DeleteRoleResponse" />
         <entry key="delete_role_response_validation_error" value="DeleteRoleResponseValidationError" />
+        <entry key="entry" value="Entry" />
         <entry key="environment_attribute_value" value="EnvironmentAttributeValue" />
         <entry key="environment_attribute_value_dao" value="environmentAttributeValueDao" />
+        <entry key="error_event_config" value="ErrorEventConfig" />
         <entry key="float_converter" value="FloatConverter" />
         <entry key="float_evaluator" value="FloatEvaluator" />
+        <entry key="general_producer" value="GeneralProducer" />
         <entry key="get_all_permissions_request" value="GetAllPermissionsRequest" />
         <entry key="get_all_permissions_request_validation_error" value="GetAllPermissionsRequestValidationError" />
         <entry key="get_all_permissions_response" value="GetAllPermissionsResponse" />
@@ -2974,6 +3497,7 @@
         <entry key="get_role_request_validation_error" value="GetRoleRequestValidationError" />
         <entry key="get_role_response" value="GetRoleResponse" />
         <entry key="get_role_response_validation_error" value="GetRoleResponseValidationError" />
+        <entry key="gorm_access_plugin" value="GormAccessPlugin" />
         <entry key="grant_role_permission_request" value="GrantRolePermissionRequest" />
         <entry key="grant_role_permission_request_validation_error" value="GrantRolePermissionRequestValidationError" />
         <entry key="grant_role_permission_response" value="GrantRolePermissionResponse" />
@@ -2986,6 +3510,7 @@
         <entry key="grant_user_role_request_validation_error" value="GrantUserRoleRequestValidationError" />
         <entry key="grant_user_role_response" value="GrantUserRoleResponse" />
         <entry key="grant_user_role_response_validation_error" value="GrantUserRoleResponseValidationError" />
+        <entry key="hot_user_loader" value="HotUserLoader" />
         <entry key="init_service" value="InitService" />
         <entry key="inteceptor_builder" value="InteceptorBuilder" />
         <entry key="interceptor_builder" value="InterceptorBuilder" />
@@ -3022,8 +3547,15 @@
         <entry key="list_user_roles_response" value="ListUserRolesResponse" />
         <entry key="list_user_roles_response_validation_error" value="ListUserRolesResponseValidationError" />
         <entry key="logic_operator_executor" value="logicOperatorExecutor" />
+        <entry key="message" value="Message" />
+        <entry key="mock_permission_service_client" value="mockPermissionServiceClient" />
+        <entry key="multi_cache_v1" value="MultiCacheV1" />
+        <entry key="multi_cache_v2" value="MultiCacheV2" />
+        <entry key="multi_cluster_cache" value="MultiClusterCache" />
         <entry key="number_converter" value="NumberConverter" />
         <entry key="number_evaluator" value="NumberEvaluator" />
+        <entry key="operation_log" value="OperationLog" />
+        <entry key="operation_log_dao" value="operationLogDao" />
         <entry key="permission" value="Permission" />
         <entry key="permission_dao" value="permissionDao" />
         <entry key="permission_policy" value="PermissionPolicy" />
@@ -3032,6 +3564,7 @@
         <entry key="permission_service" value="permissionService" />
         <entry key="permission_service_client" value="permissionServiceClient" />
         <entry key="permission_svc" value="permissionSvc" />
+        <entry key="permission_v1" value="PermissionV1" />
         <entry key="permission_validation_error" value="PermissionValidationError" />
         <entry key="policy" value="Policy" />
         <entry key="policy_dao" value="policyDao" />
@@ -3071,6 +3604,7 @@
         <entry key="role_validation_error" value="RoleValidationError" />
         <entry key="selector" value="selector" />
         <entry key="server" value="Server" />
+        <entry key="step" value="step" />
         <entry key="string_converter" value="StringConverter" />
         <entry key="string_evaluator" value="StringEvaluator" />
         <entry key="subject_attribute_value" value="SubjectAttributeValue" />
@@ -3097,12 +3631,19 @@
         <entry key="update_role_request_validation_error" value="UpdateRoleRequestValidationError" />
         <entry key="update_role_response" value="UpdateRoleResponse" />
         <entry key="update_role_response_validation_error" value="UpdateRoleResponseValidationError" />
+        <entry key="user" value="User" />
         <entry key="user_permission" value="UserPermission" />
+        <entry key="user_permission_cache" value="userPermissionCache" />
+        <entry key="user_permission_cached_repository" value="UserPermissionCachedRepository" />
         <entry key="user_permission_dao" value="userPermissionDao" />
+        <entry key="user_permission_event" value="UserPermissionEvent" />
         <entry key="user_permission_repository" value="userPermissionRepository" />
         <entry key="user_permission_validation_error" value="UserPermissionValidationError" />
         <entry key="user_role" value="UserRole" />
+        <entry key="user_role_bin_log_consumer" value="UserRoleBinLogConsumer" />
         <entry key="user_role_dao" value="userRoleDao" />
+        <entry key="user_role_log" value="UserRoleLog" />
+        <entry key="user_role_log_dao" value="userRoleLogDAO" />
         <entry key="user_role_repository" value="userRoleRepository" />
         <entry key="user_role_validation_error" value="UserRoleValidationError" />
         <entry key="x" value="x" />

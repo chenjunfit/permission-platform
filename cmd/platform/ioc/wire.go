@@ -8,6 +8,7 @@ import (
 	"github.com/permission-dev/internal/ioc"
 	"github.com/permission-dev/internal/repository"
 	"github.com/permission-dev/internal/repository/dao"
+	"github.com/permission-dev/internal/repository/dao/audit"
 	"github.com/permission-dev/internal/service/abac"
 	rbacSvc "github.com/permission-dev/internal/service/rbac"
 )
@@ -51,6 +52,8 @@ var (
 		abac.NewAttributeDefinitionSvc,
 		abac.NewAttributeValueSvc,
 		abac.NewPolicySvc,
+
+		audit.NewOperationLogDao,
 	)
 )
 

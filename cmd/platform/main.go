@@ -27,7 +27,7 @@ func main() {
 		}
 	}(tp, ctx)
 	app := ioc2.InitApp()
-
+	app.StartTasks(ctx)
 	servers := make([]server.Server, 0, len(app.GrpcServers)+1)
 	//metrics
 	servers = append(servers, egovernor.Load("server.governor").Build())
