@@ -17,6 +17,10 @@ var (
 	baseSet = wire.NewSet(
 		ioc.InitDB,
 		ioc.InitJwtToken,
+		ioc.InitLocalCache,
+		ioc.InitCacheKeyFunc,
+		ioc.InitMultiLevelCache,
+		ioc.InitRedisClient,
 	)
 	rbacSet = wire.NewSet(
 		dao.NewRoleDao,

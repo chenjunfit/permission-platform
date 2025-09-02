@@ -39,3 +39,6 @@ cache:
       bitRingSize: 128
       rateThreshold: 0.8
       consecutiveCount: 3
+
+redis:
+  addr: "localhost:6379"

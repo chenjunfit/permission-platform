@@ -188,6 +188,8 @@
               <option value="file://$PROJECT_DIR$/internal/ioc/cache.go" />
               <option value="file://$PROJECT_DIR$/internal/ioc/jwt.go" />
               <option value="file://$PROJECT_DIR$/internal/ioc/kafaka.go" />
+              <option value="file://$PROJECT_DIR$/internal/ioc/local_cache.go" />
+              <option value="file://$PROJECT_DIR$/internal/ioc/redis.go" />
             </set>
           </value>
         </entry>
@@ -1254,6 +1256,13 @@
             </set>
           </value>
         </entry>
+        <entry key="RoleInclusionReloadCacheRepository">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/rbac_role_inclue_cache.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="RoleInclusionValidationError">
           <value>
             <set>
@@ -1534,6 +1543,13 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/internal/repository/dao/audit/user_role_operation_log.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UserRoleReloadCacheRepository">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/repository/rbac_user_role_cache.go" />
             </set>
           </value>
         </entry>
@@ -2076,7 +2092,7 @@
         <entry key="file://$PROJECT_DIR$/cmd/platform/ioc/wire.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1756555297993" />
+              <option name="lastModified" value="1756800005491" />
             </ScannedPath>
           </value>
         </entry>
@@ -2490,6 +2506,31 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/internal/ioc/local_cache.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756799788651" />
+              <option name="schema">
+                <list>
+                  <option value="Config" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/ioc/redis.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756799935595" />
+              <option name="schema">
+                <list>
+                  <option value="Config" />
+                  <option value="Config" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/internal/ioc/trace.go">
           <value>
             <ScannedPath>
@@ -2566,7 +2607,7 @@
         <entry key="file://$PROJECT_DIR$/internal/repository/abac_attr_value.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1755669035379" />
+              <option name="lastModified" value="1756803487402" />
               <option name="schema">
                 <list>
                   <option value="attributeValueRepository" />
@@ -2838,7 +2879,7 @@
         <entry key="file://$PROJECT_DIR$/internal/repository/dao/user_role.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1754973038496" />
+              <option name="lastModified" value="1756791889518" />
               <option name="schema">
                 <list>
                   <option value="UserRole" />
@@ -2896,6 +2937,18 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/internal/repository/rbac_role_inclue_cache.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1756792599777" />
+              <option name="schema">
+                <list>
+                  <option value="RoleInclusionReloadCacheRepository" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/internal/repository/rbac_role_permission.go">
           <value>
             <ScannedPath>
@@ -2911,7 +2964,12 @@
         <entry key="file://$PROJECT_DIR$/internal/repository/rbac_user_role_cache.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1756735990203" />
+              <option name="lastModified" value="1756801644035" />
+              <option name="schema">
+                <list>
+                  <option value="UserRoleReloadCacheRepository" />
+                </list>
+              </option>
             </ScannedPath>
           </value>
         </entry>
@@ -2942,7 +3000,7 @@
         <entry key="file://$PROJECT_DIR$/internal/repository/user_role.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1754975961848" />
+              <option name="lastModified" value="1756801611009" />
               <option name="schema">
                 <list>
                   <option value="userRoleRepository" />
@@ -3595,6 +3653,7 @@
         <entry key="role_include_repository" value="roleIncludeRepository" />
         <entry key="role_inclusion" value="RoleInclusion" />
         <entry key="role_inclusion_dao" value="roleInclusionDao" />
+        <entry key="role_inclusion_reload_cache_repository" value="RoleInclusionReloadCacheRepository" />
         <entry key="role_inclusion_validation_error" value="RoleInclusionValidationError" />
         <entry key="role_permission" value="RolePermission" />
         <entry key="role_permission_dao" value="rolePermissionDAO" />
@@ -3644,6 +3703,7 @@
         <entry key="user_role_dao" value="userRoleDao" />
         <entry key="user_role_log" value="UserRoleLog" />
         <entry key="user_role_log_dao" value="userRoleLogDAO" />
+        <entry key="user_role_reload_cache_repository" value="UserRoleReloadCacheRepository" />
         <entry key="user_role_repository" value="userRoleRepository" />
         <entry key="user_role_validation_error" value="UserRoleValidationError" />
         <entry key="x" value="x" />

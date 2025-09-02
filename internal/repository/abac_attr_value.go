@@ -57,7 +57,7 @@ func (a *attributeValueRepository) DeleteEnvironmentValue(ctx context.Context, b
 
 func (a *attributeValueRepository) FindEnvironmentValue(ctx context.Context, bizID int64) (domain.ABACObject, error) {
 	//to-do 使用缓存
-	return domain.ABACObject{}, nil
+	return a.FindEnvironmentValue(ctx, bizID)
 }
 
 func (a *attributeValueRepository) FindEnvironmentValueWithDefinition(ctx context.Context, bizID int64) (domain.ABACObject, error) {

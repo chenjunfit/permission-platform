@@ -22,6 +22,22 @@ type userRoleRepository struct {
 	logger      *elog.Component
 }
 
+func (r *userRoleRepository) FindByBizIDAndRoleIDs(ctx context.Context, bizID int64, roleIDs []int64) ([]domain.UserRole, error) {
+	userRoles, err := r.userRoleDao.FindByBizIDAndRoleIDs(ctx, bizID, roleIDs)
+	if err != nil {
+		return nil, err
+	}
+	return slice.Map(userRoles, func(_ int, src dao.UserRole) domain.UserRole {
+		return r.toDomain(src)
+	}), nil
+}
+func (u *userRoleRepository) FindByBizIDAndID(ctx context.Context, bizID, id int64) (domain.UserRole, error) {
+	ur, err := u.userRoleDao.FindByBizIDAndID(ctx, bizID, id)
+	if err != nil {
+		return domain.UserRole{}, err
+	}
+	return u.toDomain(ur), nil
+}
 func (ur *userRoleRepository) Create(ctx context.Context, userRole domain.UserRole) (domain.UserRole, error) {
 	created, err := ur.userRoleDao.Create(ctx, ur.toEntity(userRole))
 	if err != nil {
